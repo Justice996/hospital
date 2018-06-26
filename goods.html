@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>订单</title>
+	<link rel="stylesheet" type="text/css" href="css/doctor.css" media="screen"/>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $div_li =$("div.checked ul li");
+			$div_li.mouseover(function(){
+				$(this).addClass("select").siblings().removeClass("select");  
+				var index=$div_li.index(this); 
+				$("div.contents > div").eq(index).show().siblings().hide(); 
+			})
+		})
+	</script>
+</head>
+<body>
+<div class="goods">
+	<header>订单</header>
+	<div class="checked">
+		<ul>
+			<li class="select">未完成</li>
+			<li>已完成</li>
+			<li>全部</li>
+		</ul>
+	</div>
+	<div class="contents">
+		<div class="con_1">
+			<div class="con">
+				<p class="num">订单编号：17151315181515<span>待支付</span></p>
+				<dl>
+					<dt><img src="img/8_1.jpg"/></dt>
+					<dd>下单时间：2017/11/17&nbsp;15:06</dd>
+					<dd>护理类型：天天护理(标准)</dd>
+					<dd>订单金额：253元</dd>
+				</dl>
+				<p class="sub"><a href="" class="select">立即支付</a><a href="">取消订单</a></p>
+			</div>
+		</div>
+		<div class="con_2 hide">您还没有此类型订单</div>
+		<div class="con_3 hide">
+			<div class="con">
+				<p class="num">订单编号：17151315181515<span>待支付</span></p>
+				<dl>
+					<dt><img src="img/8_1.jpg"/></dt>
+					<dd>下单时间：2017/11/17&nbsp;15:06</dd>
+					<dd>护理类型：天天护理(标准)</dd>
+					<dd>订单金额：253元</dd>
+				</dl>
+				<p class="sub"><a href="" class="select">立即支付</a><a href="">取消订单</a></p>
+			</div>
+			<div class="con">
+				<p class="num">订单编号：17151315181515<span>已完成</span></p>
+				<dl>
+					<dt><img src="img/8_1.jpg"/></dt>
+					<dd>下单时间：2017/11/17&nbsp;15:06</dd>
+					<dd>护理类型：天天护理(标准)</dd>
+					<dd>订单金额：253元</dd>
+				</dl>
+				<p class="sub"><a href="" class="select">评价</a><a href="">删除订单</a></p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<dl>
+			<dt><img src="img/8_2.jpg"/></dt>
+			<dd><a href="index.html">首页</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/8_3.jpg"/></dt>
+			<dd><a href="section.html">科室</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/8_4.jpg"/></dt>
+			<dd><a href="goods.html" class="selected">订单</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/8_5.jpg"/></dt>
+			<dd><a href="me.html">我的</a></dd>
+		</dl>
+	</footer>
+</div>
+</body>
+</html>

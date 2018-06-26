@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/doctor.css" media="screen"/>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+		
+	});
+	//小火箭
+	$(function(){	
+	$(window).scroll(function() {		
+		if($(window).scrollTop() >= 100){ //向下滚动像素大于这个值时，即出现小火箭
+			$('.actGotop').fadeIn(300); //火箭淡入的时间，越小出现的越快~
+
+		}else{    
+			$('.actGotop').fadeOut(300); //火箭淡出的时间，越小消失的越快
+		}  
+	});
+	$('.actGotop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+	});
+</script>
+</head>
+<body>
+<div class="index">
+	<div class="actGotop"><a href="javascript:;" title="返回顶部"></a></div>
+	<header>Logo<img src="img/index.jpg"/></header>
+	<div class="banner"><img src="img/1_02.jpg"/></div>
+	<div class="con_1">
+		<div class="left">
+			<dl>
+				<dt><img src="img/1_05.jpg"/></dt>
+				<dd class="black"><a href="day.html">天天护理</a>&nbsp;(标准)</dd>
+				<dd>短期&nbsp;.&nbsp;医院</dd>
+				<dd class="last">助医&nbsp;.&nbsp;助餐.助洁</dd>
+				<dd class="money">220元/天</dd>
+			</dl>
+			<dl class="noborder">
+				<dt><img src="img/1_05.jpg"/></dt>
+				<dd class="black"><a href="">天天护理</a>&nbsp;(中等)</dd>
+				<dd>短期&nbsp;.&nbsp;医院</dd>
+				<dd class="last">助医&nbsp;.&nbsp;助餐.助洁</dd>
+				<dd class="money">220元/天</dd>
+			</dl>
+		</div>
+		<div class="right">
+			<dl>
+				<dt><img src="img/1_07.jpg"/></dt>
+				<dd class="black"><a href="">天天护理</a>&nbsp;(重症)</dd>
+				<dd>短期&nbsp;.&nbsp;医院</dd>
+				<dd>助医&nbsp;.&nbsp;助餐.助洁</dd>
+				<dd class="money">188元/天</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="con_2">
+		<div class="left">
+			<dl>
+				<dt><img src="img/1_12.jpg"/></dt>
+				<dd class="black"><a href="week.html">周期护理</a>&nbsp;(标准)</dd>
+				<dd>长期&nbsp;.&nbsp;养老</dd>
+				<dd>助医&nbsp;.&nbsp;助餐.助洁</dd>
+				<dd class="money">188元/天</dd>
+			</dl>
+		</div>
+		<div class="right">
+			<dl>
+				<dt><img src="img/1_14.jpg"/></dt>
+				<dd class="black"><a href="">周期护理</a>&nbsp;(中等)</dd>
+				<dd>短期&nbsp;.&nbsp;医院</dd>
+				<dd class="last">助医&nbsp;.&nbsp;助餐.助洁</dd>
+				<dd class="money">220元/天</dd>
+			</dl>
+			<dl class="noborder">
+				<dt><img src="img/1_14.jpg"/></dt>
+				<dd class="black"><a href="">周期护理</a>&nbsp;(重症)</dd>
+				<dd>短期&nbsp;.&nbsp;医院</dd>
+				<dd class="last">助医&nbsp;.&nbsp;助餐.助洁</dd>
+				<dd class="money">220元/天</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="con_3">
+		<h3>服务承诺.做专业有保障的护理品牌<span>our&nbsp;commitment</span></h3>
+		<p>海量护理员信息，免费在线预约；100%实名认证，安全放心；国内哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈</p>
+		<dl>
+			<dt><img src="img/1_19.jpg"/></dt>
+			<dd><a href="">免费在线预约</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/1_21.jpg"/></dt>
+			<dd><a href="">100%实名认证</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/1_24.jpg"/></dt>
+			<dd><a href="">引进先进技术</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/1_26.jpg"/></dt>
+			<dd><a href="">用心保证服务</a></dd>
+		</dl>
+	</div>
+	<div class="con_4">
+		<h3>护工精彩</h3>
+		<dl>
+			<dt><img src="img/1_33.jpg"/></dt>
+			<dd><a href="" class="big">护工先进个人事迹</a><a href="" class="small">@@同志，女，@@年11月出生，汉族，1971年参加工作，现就职于@@医院@@岗位哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或</a><span class="right">2017-11-16</span></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/1_36.jpg"/></dt>
+			<dd><a href="" class="big">护工先进个人事迹</a><a href="" class="small">@@同志，女，@@年11月出生，汉族，1971年参加工作，现就职于@@医院@@岗位哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或</a><span class="right">2017-11-16</span></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/1_38.jpg"/></dt>
+			<dd><a href="" class="big">护工先进个人事迹</a><a href="" class="small">@@同志，女，@@年11月出生，汉族，1971年参加工作，现就职于@@医院@@岗位哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或</a><span class="right">2017-11-16</span></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/1_41.jpg"/></dt>
+			<dd><a href="" class="big">护工先进个人事迹</a><a href="" class="small">@@同志，女，@@年11月出生，汉族，1971年参加工作，现就职于@@医院@@岗位哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或</a><span class="right">2017-11-16</span></dd>
+		</dl>
+	</div>
+	<div class="con_5">
+		<dl>
+			<dt><img src="img/1_44.jpg"/></dt>
+			<dd><a href="index.html" class="selected">首页</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/index_05.jpg"/></dt>
+			<dd><a href="section.html">科室</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/index_07.jpg"/></dt>
+			<dd><a href="goods.html">订单</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/index_09.jpg"/></dt>
+			<dd><a href="me.html">我的</a></dd>
+		</dl>
+	</div>
+</div>
+</body>
+</html>

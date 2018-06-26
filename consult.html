@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我的咨询</title>
+	<link rel="stylesheet" type="text/css" href="css/doctor.css" media="screen"/>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $div_li =$("div .menu ul li");
+			$div_li.mouseover(function(){
+				$(this).addClass("select").siblings().removeClass("select");  
+				var index=$div_li.index(this); 
+				$("div.content > div").eq(index).show().siblings().hide(); 
+			})
+		})
+	</script>
+</head>
+<body>
+<div class="consult">
+	<header><a href="me.html"><img src="img/yy_1.jpg"/></a>我的咨询</header>
+	<div class="menu">
+		<ul>
+			<li class="select">图文咨询</li>
+			<li>远程会诊</li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="con_1">
+			<div class="con">
+				<dl>
+					<dt><img src="img/23_03.jpg"/></dt>
+					<dd>八十岁老人左侧小脑出血，(轻微)住院十二天出院后有后遗症吗？<span>2017/11/16</span></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="con_2 hide">
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理<a href="">立即预约</a></dd>
+				</dl>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理<a href="">立即预约</dd>
+				</dl>
+			</div>
+		</div>		
+	</div>
+</div>
+</body>
+</html>

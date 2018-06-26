@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>科室</title>
+	<link rel="stylesheet" type="text/css" href="css/doctor.css" media="screen"/>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $div_li =$("div header ul li");
+			$div_li.mouseover(function(){
+				$(this).addClass("select").siblings().removeClass("select");  
+				var index=$div_li.index(this); 
+				$("div.content > div").eq(index).show().siblings().hide(); 
+			})
+		})
+	</script>
+</head>
+<body>
+<div class="section">
+	<header>
+		<ul>
+			<li>科室</li>
+			<li class="select">管理老师</li>
+		</ul>
+	</header>
+	<div class="content">
+		<div class="con_1 hide">
+			<div class="top">
+				<ul>
+					<li class="first">科室<img src="img/11_1.jpg"/></li>
+					<li>好评<img src="img/11_2.jpg"/></li>
+				</ul>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理</dd>
+				</dl>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理</dd>
+				</dl>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="con_2">
+			<div class="top">
+				<ul>
+					<li class="first">科室<img src="img/11_2.jpg"/></li>
+					<li class="first">护龄<img src="img/11_1.jpg"/></li>
+					<li>好评<img src="img/11_2.jpg"/></li>
+				</ul>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理</dd>
+				</dl>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理</dd>
+				</dl>
+			</div>
+			<div class="con">
+				<dl>
+					<dt><img src="img/11_3.jpg"/></dt>
+					<dd><b>梅艳丽</b>&nbsp;&nbsp;高级护理&nbsp;&nbsp;全科</dd>
+					<dd>好评率：99%</dd>
+					<dd>擅长：内科护理&nbsp;&nbsp;外科护理</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<dl>
+			<dt><img src="img/11_4.jpg"/></dt>
+			<dd><a href="index.html">首页</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/11_5.jpg"/></dt>
+			<dd><a href="section.html" class="selected">科室</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/11_6.jpg"/></dt>
+			<dd><a href="goods.html">订单</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/11_7.jpg"/></dt>
+			<dd><a href="me.html">我的</a></dd>
+		</dl>
+	</footer>
+</div>
+</body>
+</html>

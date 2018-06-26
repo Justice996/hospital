@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>天天护理(标准)</title>
+	<link rel="stylesheet" type="text/css" href="css/doctor.css" media="screen"/>
+	<script src="js/jquery.js"></script>
+	<script>
+	$(function(){
+		var $div_li =$("div.tab_menu ul li");
+		$div_li.mouseover(function(){
+			$(this).addClass("select").siblings().removeClass("select");  
+			var index=$div_li.index(this); 
+			$("div.tab_box > div").eq(index).show().siblings().hide(); 
+		})
+	})
+	</script>
+</head>
+<body>
+<div class="day">
+	<header><a href="index.html"><</a>天天护理(&nbsp;标准&nbsp;)</header>
+	<div class="con_1">
+		<dl>
+			<dt><img src="img/2_02.jpg"/><dt>
+			<dd>截止目前为止，已有<span>814</span>人预约该项服务</dd>
+		</dl>
+	</div>
+	<div class="con_2">
+		<dl>
+			<dt><img src="img/2_05.jpg"/></dt>
+			<dd><a href="">实名认证</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/2_07.jpg"/></dt>
+			<dd><a href="">健康证明</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/2_09.jpg"/></dt>
+			<dd><a href="">专业培训</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/2_11.jpg"/></dt>
+			<dd><a href="">全程监督</a></dd>
+		</dl>
+		<dl>
+			<dt><img src="img/2_13.jpg"/></dt>
+			<dd><a href="">售后保障</a></dd>
+		</dl>
+	</div>
+	<div class="con_3">
+		<div class="tab_menu">
+			<ul>
+				<li class="select left">服务内容</li>
+				<li>用户评价(96)</li>
+			</ul>
+		</div>
+		<div class="tab_box">
+			<div class="tab1">
+				<div class="tab_1">
+					<p>一天起下单，24小时陪护(不包含餐费)</p>
+					<p>适用人群</p>
+					<ul>
+						<li>生活完全自理的老年慢性病的患者</li>
+						<li>生活部分自理的人群</li>
+						<li>需要生活照料的人群</li>
+						<li>病情稳定，仍需卧床的患者</li>
+					</ul>
+				</div>
+				<div class="tab_2">
+					<p>日常生活照料</p>
+					<ul>
+						<li>生活完全自理的老年慢性病的患者</li>
+						<li>生活部分自理的人群</li>
+						<li>需要生活照料的人群</li>
+						<li>病情稳定，仍需卧床的患者</li>
+					</ul>
+				</div>
+				<div class="tab_3">
+					<p>基础护理服务</p>
+					<ul>
+						<li>生活完全自理的老年慢性病的患者</li>
+						<li>生活部分自理的人群</li>
+						<li>需要生活照料的人群</li>
+						<li>病情稳定，仍需卧床的患者</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab2 hide">
+				<ul>
+					<li>专业</li>
+					<li>态度好</li>
+					<li>服务好</li>
+					<li>注意隐私</li>
+				</ul>
+				<aside>
+					<p class="big">内科&nbsp;&nbsp;135***7619<span>2017.09.2&nbsp;2:22</span></p>
+					<p>做的很好，老人有了很大改善，增加了信心，继续使用啦</p>
+				</aside>
+				<aside>
+					<p class="big">内科&nbsp;&nbsp;135***7619<span>2017.09.2&nbsp;2:22</span></p>
+					<p>做的很好，老人有了很大改善，增加了信心，继续使用啦</p>
+				</aside>
+				<aside>
+					<p class="big">内科&nbsp;&nbsp;135***7619<span>2017.09.2&nbsp;2:22</span></p>
+					<p>做的很好，老人有了很大改善，增加了信心，继续使用啦</p>
+				</aside>
+				<aside>
+					<p class="big">内科&nbsp;&nbsp;135***7619<span>2017.09.2&nbsp;2:22</span></p>
+					<p>做的很好，老人有了很大改善，增加了信心，继续使用啦</p>
+				</aside>
+				<aside>
+					<p class="big">内科&nbsp;&nbsp;135***7619<span>2017.09.2&nbsp;2:22</span></p>
+					<p>做的很好，老人有了很大改善，增加了信心，继续使用啦</p>
+				</aside>
+				<aside>
+					<p class="big">内科&nbsp;&nbsp;135***7619<span>2017.09.2&nbsp;2:22</span></p>
+					<p>做的很好，老人有了很大改善，增加了信心，继续使用啦</p>
+				</aside>
+			</div>
+		</div>
+	</div>
+	<footer><a href="" class="select">立即预约</a></footer>
+
+</div>
+</body>
+</html>
